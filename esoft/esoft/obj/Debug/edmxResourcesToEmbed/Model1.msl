@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище esoftModelContainer" CdmEntityContainer="esoftEntities">
+    <EntitySetMapping Name="agents">
+      <EntityTypeMapping TypeName="esoftModel.agent">
+        <MappingFragment StoreEntitySet="agents">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DealShare" ColumnName="DealShare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="apartments">
+      <EntityTypeMapping TypeName="esoftModel.apartment">
+        <MappingFragment StoreEntitySet="apartments">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdDistrict" ColumnName="IdDistrict" />
+          <ScalarProperty Name="Coordinate_latitude" ColumnName="Coordinate_latitude" />
+          <ScalarProperty Name="Coordinate_longitude" ColumnName="Coordinate_longitude" />
+          <ScalarProperty Name="TotalArea" ColumnName="TotalArea" />
+          <ScalarProperty Name="Rooms" ColumnName="Rooms" />
+          <ScalarProperty Name="Floor" ColumnName="Floor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="apartments_demands">
+      <EntityTypeMapping TypeName="esoftModel.apartments_demands">
+        <MappingFragment StoreEntitySet="apartments_demands">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdDemands" ColumnName="IdDemands" />
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="MinRooms" ColumnName="MinRooms" />
+          <ScalarProperty Name="MaxRooms" ColumnName="MaxRooms" />
+          <ScalarProperty Name="MinFloor" ColumnName="MinFloor" />
+          <ScalarProperty Name="MaxFloor" ColumnName="MaxFloor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clients">
+      <EntityTypeMapping TypeName="esoftModel.client">
+        <MappingFragment StoreEntitySet="clients">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="deals">
+      <EntityTypeMapping TypeName="esoftModel.deal">
+        <MappingFragment StoreEntitySet="deals">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Demand_Id" ColumnName="Demand_Id" />
+          <ScalarProperty Name="Supply_Id" ColumnName="Supply_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Demands">
+      <EntityTypeMapping TypeName="esoftModel.Demand">
+        <MappingFragment StoreEntitySet="Demands">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+          <ScalarProperty Name="IdAgent" ColumnName="IdAgent" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="MinPrice" ColumnName="MinPrice" />
+          <ScalarProperty Name="MaxPrice" ColumnName="MaxPrice" />
+          <ScalarProperty Name="MinArea" ColumnName="MinArea" />
+          <ScalarProperty Name="MaxArea" ColumnName="MaxArea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="districts">
+      <EntityTypeMapping TypeName="esoftModel.district">
+        <MappingFragment StoreEntitySet="districts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Coordinates" ColumnName="Coordinates" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Addres_City" ColumnName="Addres_City" />
+          <ScalarProperty Name="Address_Street" ColumnName="Address_Street" />
+          <ScalarProperty Name="Address_house" ColumnName="Address_house" />
+          <ScalarProperty Name="Address_number" ColumnName="Address_number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="house_demands">
+      <EntityTypeMapping TypeName="esoftModel.house_demands">
+        <MappingFragment StoreEntitySet="house-demands">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdDemands" ColumnName="IdDemands" />
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="MinFloors" ColumnName="MinFloors" />
+          <ScalarProperty Name="MaxFloors" ColumnName="MaxFloors" />
+          <ScalarProperty Name="MinRooms" ColumnName="MinRooms" />
+          <ScalarProperty Name="MaxRooms" ColumnName="MaxRooms" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="houses">
+      <EntityTypeMapping TypeName="esoftModel.house">
+        <MappingFragment StoreEntitySet="houses">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdDistrict" ColumnName="IdDistrict" />
+          <ScalarProperty Name="Coordinate_latitude" ColumnName="Coordinate_latitude" />
+          <ScalarProperty Name="Coordinate_longitude" ColumnName="Coordinate_longitude" />
+          <ScalarProperty Name="TotalFloors" ColumnName="TotalFloors" />
+          <ScalarProperty Name="TotalArea" ColumnName="TotalArea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="land_demands">
+      <EntityTypeMapping TypeName="esoftModel.land_demands">
+        <MappingFragment StoreEntitySet="land-demands">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdDemands" ColumnName="IdDemands" />
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lands">
+      <EntityTypeMapping TypeName="esoftModel.land">
+        <MappingFragment StoreEntitySet="lands">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdDistrict" ColumnName="IdDistrict" />
+          <ScalarProperty Name="Coordinate_latitude" ColumnName="Coordinate_latitude" />
+          <ScalarProperty Name="Coordinate_longitude" ColumnName="Coordinate_longitude" />
+          <ScalarProperty Name="TotalArea" ColumnName="TotalArea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="supplies">
+      <EntityTypeMapping TypeName="esoftModel.supply">
+        <MappingFragment StoreEntitySet="supplies">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="IdDIstrict" ColumnName="IdDIstrict" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="types">
+      <EntityTypeMapping TypeName="esoftModel.type">
+        <MappingFragment StoreEntitySet="types">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

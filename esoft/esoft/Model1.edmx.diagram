@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="add4025e912c430b8dcdb37f9a82b7e7" Name="Diagram1">
+        <EntityTypeShape EntityType="esoftModel.agent" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="esoftModel.apartment" Width="1.5" PointX="3" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="esoftModel.apartments_demands" Width="1.5" PointX="5.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="esoftModel.client" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="esoftModel.deal" Width="1.5" PointX="5.25" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="esoftModel.Demand" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="esoftModel.district" Width="1.5" PointX="0.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="esoftModel.house_demands" Width="1.5" PointX="8.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="esoftModel.house" Width="1.5" PointX="3" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="esoftModel.land_demands" Width="1.5" PointX="5.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="esoftModel.land" Width="1.5" PointX="3" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="esoftModel.supply" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="esoftModel.type" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="esoftModel.FK_apartments_demands_agents" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_Demands_agents" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_house_demands_agents" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_land_demands_agents" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_supplies_agents" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_apartments_districts1" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_apartments_demands_clients" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_apartments_demands_Demands" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_house_demands_clients" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_land_demands_clients" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_supplies_clients" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_deals_Demands" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_deals_supplies" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_house_demands_Demands" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_land_demands_Demands" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_houses_districts1" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_lands_districts1" ManuallyRouted="false" />
+        <AssociationConnector Association="esoftModel.FK_supplies_districts" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
